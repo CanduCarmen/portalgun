@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "portalgun",
+	"version": "${version}",
+	"name": "Portal Gun",
+	"description": "Client-side portal gun: shoot a portal to coordinates, another local world or a server.",
+	"authors": [
+		"you"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/portalgun/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.portalgun.PortalGunClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+	"mixins": [
+		{
+			"config": "portalgun.mixins.json",
+			"environment": "client"
+		}
+	]
+}
